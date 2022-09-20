@@ -40,15 +40,15 @@ class User extends Authenticatable
      * @var array<string, string>
      */
 
-    protected $appends=['avatar'];
+    // protected $appends=['avatar'];
 
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
 
-    public function getAvatarAttribute()
-    {
-        return "https://www.gravatar.com/avatar/" . md5( strtolower( trim($this-> email ) ) );
-    }
+    // public function getAvatarAttribute()
+    // {
+    //     return "https://www.gravatar.com/avatar/" . md5( strtolower( trim($this-> email ) ) );
+    // }
 
 }

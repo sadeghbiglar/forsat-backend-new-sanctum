@@ -20,9 +20,9 @@ use App\Http\Controllers\LikeController;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
+// Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+//     return $request->user();
+// });
 
 Route::post('/sanctum/token', function (Request $request) {
     $request->validate([
